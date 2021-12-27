@@ -3,122 +3,82 @@
     padding: 0%;
     box-sizing: border-box;
 }
-.elgeneral {
-    max-width: 1350px;
-    margin: auto;
-}
+.header {
+    background-color: lavender;
 
-.header__logo {
-    height: 14rem;
-    width: 14rem;
+}
+.header__logo{
+    display: flex;
+    width: 10rem;
+    height: 10rem;
+    position:relative;
+    
 }
 .navegacion {
-    display: inline-block;
-
-}
-.navegacion__lista { 
-    display: inline-flex;
-    align-items:center;
-    font-size: 1rem;
-    margin-bottom: 1rem;
-    padding-bottom: 3rem;
-    width: 13rem;
+    display: flex;
     list-style: none;
-    font-weight:lighter;
-    padding-left: 3rem;
     position: relative;
-    left: 20rem;
+    justify-content:center;
+    align-content: space-around;
+
+    
 }
 .item {
-    display: grid;
-grid-template-columns: repeat(5, 1fr);
-grid-gap: 5px;
-justify-items: flex-end;
-padding-left: 5rem;
+    margin-left: 5%;
+    margin-right: 5%;
+}
+.main {
+    padding-top: 2rem;
+   display: inline-block;
 
 }
-
-.separador {
-    border: 0.1rem solid #ff00ff	;
+.titulo {
+    font-size: 3rem;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+    text-align:center;
 }
 
-.footer {
-    display: flex;
-    font-size: 1rem;
-    margin: 0.5rem;
-}
 .hero {
     display: grid;
-        grid-template-columns: repeat(4, 1fr);
-        grid-auto-flow: dense;
-        grid-template-rows: auto;
-        gap: 10px;
-        flex-wrap: wrap; 
+    grid-template-columns: repeat(4, 1fr);
+    grid-gap: 5px;
+    justify-items: flex-end;
+    grid-auto-rows: 200px;
+    padding: 20px;
+
+
+}
+.hero__imagen {
+    width: 100%;
+    height: 100%;
+    object-fit:cover;
+
 
 }
 
-.hero__imagen{
-        height: 18rem;
-        width: 20rem;
-        object-fit: cover;
-}
-
-.main {
-    font-size: 1.2rem;
-    margin: 1rem 1rem;
-    width: 50%
-}
-
-
-.boton {
-    display: block;
-    margin: 1rem 1rem;
-    padding: 0.5rem;
-    border: 2px solid fuchsia;
-}
-
-
-.section {
-    margin: 1rem 1rem;
-}
-
-.section__titulo {
-    font-size: 1.8rem;
-    display:  inline-block;
-
-}
-.section__subtitulo {
-    font-size: 1.3rem;
-}
-
-.section__parrafo {
-    font-size: 1rem;
-    font-weight: lighter;
-
-}
-
-.section__image {
-    width:  30rem;
-    height: 30rem;
-    
-}
-
-/* .gastronomia  */
-
-.gastronomia {
-    font-size: 1.1rem;
-    
-}
-.gastronomia__item {
-    display: grid;
-    list-style: none;
- 
-
-}
-.gastronomia__item--img {
-    height: 28rem;
-    width: 30rem;
-
-}
 
 /*Contacto*/
+
+.headercontacto{
+    background:linear-gradient(to left, #ffc766, #ffc1e2);
+}
+
+.main__contacto {
+    background:linear-gradient(to left, #ffc766, #ffc1e2);
+    background-size:cover;
+    height: 15rem;
+    
+}
+.footer--contacto {
+    background:linear-gradient(to left, #ffc766, #ffc1e2);
+    background-size:cover;
+}
+
+/* Mediaqueri*/
+.elgeneral{
+    @media only screen and (min-width: 320px) and (max-widht: 480px) 
+
+    width: ;
+    height: ;
+}
